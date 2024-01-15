@@ -3,25 +3,27 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 .list-container {
   position: absolute;
-  display: block;
-  align-items: center;
   width: 40vw;
-  margin: 100px 450px;
   height: auto;
   background-color: rgb(66, 141, 245);
   border-radius: 15px;
 }
 p {
   text-align: center;
+  font-size: 20px;
 }
 form {
   display: flex;
   justify-content: center;
 }
 .textf {
-  width: 300px;
+  width: 250px;
   padding: 3px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -30,8 +32,35 @@ form {
   width: 5rem;
   height: 26px;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 .add:hover {
   background-color: aquamarine;
   transition: 0.5s;
+}
+ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  text-decoration: line-through;
+}
+li:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .textf {
+    width: 200px;
+  }
+  @media screen and (max-width: 941px) {
+    .textf {
+      width: 200px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .textf {
+    width: 50px;
+  }
 }
